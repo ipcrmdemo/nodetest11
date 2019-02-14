@@ -13,7 +13,7 @@ RUN npm install
 # RUN npm install --only=production
 RUN mkdir dist
 COPY dist/. dist/.
-COPY --from=gcr.io/kaniko-project/executor:v0.9.0 /kaniko /kaniko
+COPY --from=gcr.io/kaniko-project/executor:v0.7.0 /kaniko /kaniko
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
