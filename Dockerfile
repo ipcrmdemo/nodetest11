@@ -15,6 +15,7 @@ RUN npm install
 # Bundle app source
 RUN mkdir dist
 COPY dist/. dist/.
+COPY --from=gcr.io/kaniko-project/executor:v0.9.0 /kaniko /kaniko
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
