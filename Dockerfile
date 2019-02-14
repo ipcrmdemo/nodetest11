@@ -11,8 +11,6 @@ COPY package*.json ./
 RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
-
-# Bundle app source
 RUN mkdir dist
 COPY dist/. dist/.
 COPY --from=gcr.io/kaniko-project/executor:v0.9.0 /kaniko /kaniko
