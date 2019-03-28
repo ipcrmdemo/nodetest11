@@ -15,6 +15,7 @@
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
     "watch-ts": "tsc -w",
+    "lint": "tslint --config tslint.json --format verbose --project .",
     "lint:fix": "npm run lint -- --fix"
   },
   "author": "matt",
