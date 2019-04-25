@@ -9,7 +9,7 @@ Modified original source by mjhea0: https://github.com/mjhea0/typescript-node-ap
 `npm install`f
 
 ## Builddsfsadadff
-fadsff
+fadsfff
 `npm run build`dsafkasdlfkfdljf
 sadfadfff
 ## Start
